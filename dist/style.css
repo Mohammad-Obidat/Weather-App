@@ -1,0 +1,90 @@
+/* search container */
+
+.searchContainer {
+  display: flex;
+  align-items: stretch;
+  height: 10vh;
+  padding: 1vmax;
+  background-color: #180a0a;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#city-input {
+  flex-grow: 8;
+  caret-color: green;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#searchBtn {
+  flex-grow: 2;
+  background-color: #b8b8b830;
+}
+
+/* display container */
+
+#weather-container {
+  display: grid;
+  grid-gap: 10px;
+  text-align: left;
+  padding: 1vmax;
+  font-family: Palatino, Georgia, serif;
+  z-index: 1;
+}
+
+.background-liveImage {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+#myVideo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.displayCity {
+  margin-top: 1rem;
+  width: max-content;
+  height: max-content;
+  color: antiquewhite;
+  background-color: #39393979;
+  border-radius: 5px;
+  box-shadow: 5px 10px 8px #88888867;
+  padding: 1vmax;
+  position: relative;
+  left: 1vmax;
+  z-index: 1;
+}
+
+.icons {
+  cursor: pointer;
+}
+
+.addIcon:hover {
+  color: #1e5128;
+}
+
+.removeIcon:hover {
+  color: #950101;
+}
+
+.cityNotFound {
+  background: #180a0a;
+  right: 50vmax;
+  margin-top: 5vmax;
+}
+
+@media screen and (max-width: 1024px) {
+  .cityNotFound {
+    right: 15vmax;
+    margin-top: 9vmax;
+  }
+}

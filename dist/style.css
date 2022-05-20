@@ -64,6 +64,12 @@
   z-index: 1;
 }
 
+.displayCity:active {
+  width: 50vh;
+  height: 15vh;
+  box-shadow: 5px 10px 3px #8888888f;
+}
+
 .icons {
   cursor: pointer;
 }

@@ -30,4 +30,11 @@ const handleSearch = async () => {
   $('#city-input').val('');
 };
 
+$('#city-input').on('keypress', (event) => {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    handleSearch();
+  }
+});
+
 $('#searchBtn').on('click', handleSearch);
